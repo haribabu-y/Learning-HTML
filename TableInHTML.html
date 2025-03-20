@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables In HTMl</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            border-style: double;
+            border-color: blueviolet;
+        }
+        /* td, th {
+            background-color: aqua;
+            border-radius: 5px;
+        } */
+    </style>
+</head>
+<body>
+    <p>Tables in HTML</p>
+    <table>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>AGE</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Hari</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Seenu</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Hari</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>8989543686</td>
+        </tr>
+        <tr>
+            <td>893787798756</td>
+        </tr>
+    </table>
+</body>
+</html>

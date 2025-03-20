@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Links in HTML</title>
+    <link rel="icon" type="image/x-icon" href="MailLogo.jpg">
+    <style>
+        #linkButton:active, #linkButton:visited {
+            background-color: #ffaaff;
+            color: black;
+            padding: 20px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        #linkButton:hover {
+            background-color: bisque;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#mail">Click here to go to mail</a><br>
+
+    <h1>Links in HTML</h1>
+    <a href="WEBImage.jpg" target="_blank" title="Click to view the WEB image">View the image in new tab</a><br><br>
+    <a href="WEBImage.jpg" target="_self">View the image in same tab</a><br><br>
+    <a href="WEBImage.jpg" target="_parent">View the image in parent tab</a><br><br>
+    <a href="WEBImage.jpg" target="_top">View the image in top tab</a><br><br><br>
+
+    <p>Click on the below image to open Google</p><br>
+    <a href="https://Google.com"><img src="Smiley-emoji.jpg" alt="Smiley Emoji" width="50" height="50"></a><br><br><br>
+
+    <p>Click below to send me a email</p>
+    <p><a href="mailto:haribabu.yellappageri@itorizon.com" id="mail"><img src="MailLogo.jpg" alt="Mail logo" width="20" height="20">Send Mail</a></p><br><br><br>
+
+    <!--
+    It works only when js function is added to the button
+    <p>Click the below button to learn about HTML Links</p>
+    <button onclick="WEBImage.jpg">HTML Links</button>
+    -->
+
+    <p>Link Button</p>
+    <p>A Link Styled a Button</p>
+    <a id="linkButton" href="https://www.Google.com" target="_blank">Google Search Engine</a>
+
+    <!-- Image Mapping in HTML
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+    -->
+
+</body>
+</html>
