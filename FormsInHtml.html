@@ -7,6 +7,8 @@
 </head>
 <body>
     <form action="index.php" method="POST">
+        <fieldset>
+            <legend>Personal Details:</legend>
         <label for="username">username:</label>
         <input type="text" id="username" placeholder="Enter your username" required minlength="6" maxlength="25"><br>
         <label for="email">Email:</label>
@@ -39,10 +41,33 @@
         <label for="java">Java</label><br>
         <input type="checkbox" id="python" name="skills" value="python">
         <label for="python">Python</label><br>
-        
+
+        <label for="role">Role: </label>
+        <select>
+            <option value="Student">Student</option>
+            <option value="admin">Admin</option>
+        </select><br><br>
+
+        <label for="color">Color:</label>
+        <input type="color"><br><br>
+
+        <label for="datatime">dateTime-local</label>
+        <input type="datetime-local"><br><br>
+
+        <label for="iage">Image:</label>
+        <input type="image"><br><br>
+
+        <label for="browser">Your fav Browser:</label>
+        <input list="browser" name="browser">
+        <datalist id="browser">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+        </datalist><br><br>
 
         <input type="reset">
         <input type="submit">
+    </fieldset>
     </form>
 
 

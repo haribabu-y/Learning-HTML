@@ -1,0 +1,28 @@
+body {
+    background-color:honeydew;
+    text-align: center;
+}
+
+h1 {
+    font-family: Verdana;
+}
+
+#p1 {
+    color: indigo;
+}
+
+#p2 {
+    color: tomato;
+}
+
+#p3 {
+    color: rgb(255, 100, 200);
+}
+
+#p4 {
+    color: #58ff83
+}
+
+#p5 {
+    color: hsl(234, 60%, 70%)
+}
