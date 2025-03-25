@@ -10,8 +10,17 @@
         }
         nav {
             padding: 5px;
-            word-spacing: 15px;
             background-color: cadetblue;
+            
+        }
+        nav > div {
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+        }
+
+        div > a:hover {
+            color: white;
         }
     </style>
 </head>
@@ -20,9 +29,11 @@
      <header>
         <h1 id="title">Y HARIBABU</h1>
         <nav>
-            <a href="#aboutme">About_Me</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+            <div>
+            <a href="#aboutme" style="text-decoration: none;">About Me</a>
+            <a href="#project" style="text-decoration: none;">Project</a>
+            <a href="#contact" style="text-decoration: none;">Contact</a>
+        </div>
         </nav>
      </header>
 

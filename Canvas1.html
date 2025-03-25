@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas in HTML</title>
+    
+
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #ff00ff;"></canvas><br><br>
+    <canvas id="myCanvas2" width="200" height="100" style="border: 1px solid #ff00ff;"></canvas><br><br>
+    <canvas id="myCanvas3" width="200" height="100" style="border: 1px solid #ff00ff;"></canvas><br><br>
+    <canvas id="myCanvas4" width="200" height="100" style="border: 1px solid #ff00ff;"></canvas><br><br>
+    <canvas id="myCanvas5" width="200" height="100" style="border: 1px solid #ff00ff;"></canvas><br><br>
+    <canvas id="myCanvas6" width="200" height="100" style="border: 1px solid #ff00ff;"></canvas><br><br>
+    <canvas id="myCanvas7" width="200" height="100" style="border: 1px solid #ff00ff;"></canvas><br><br>
+
+    <script>
+        var c= document.getElementById("myCanvas");
+        var ctx1=c.getContext("2d");
+        ctx1.moveTo(0,0);
+        ctx1.lineTo(200,100);
+        ctx1.stroke();
+
+        var c= document.getElementById("myCanvas2");
+        var ctx2=c.getContext("2d");
+        ctx2.beginPath();
+        ctx2.arc(95,50,40,0,2 * Math.PI);
+        ctx2.stroke();
+
+        var c=document.getElementById("myCanvas3");
+        var ctx3=c.getContext("2d");
+        ctx3.font="30px Arial";
+        ctx3.fillText("Hello World!", 25, 60);
+
+        var c=document.getElementById("myCanvas4");
+        var ctx4=c.getContext("2d");
+        ctx4.font="30px Arial";
+        ctx4.strokeText("Hello World!", 25, 60);
+
+        var c = document.getElementById("myCanvas5");
+        var ctx5 = c.getContext("2d");
+
+        // Create gradient
+        var grd = ctx5.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx5.fillStyle = grd;
+        ctx5.fillRect(10, 10, 150, 80);
+
+        var c = document.getElementById("myCanvas6");
+        var ctx6 = c.getContext("2d");
+
+        // Create gradient
+        var grd = ctx6.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx6.fillStyle = grd;
+        ctx6.fillRect(10, 10, 150, 80);
+
+    </script>
+</body>
+</html>

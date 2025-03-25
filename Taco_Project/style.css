@@ -1,0 +1,41 @@
+nav {
+    align-items: center;
+    background-color: aquamarine;
+    padding: 10px 20px;
+    
+}
+
+nav > div {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+nav > div > a {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav > div > a:hover {
+    background-color: green;
+}
+
+table, th,td {
+    padding: 10px 20px;
+
+}
+
+#div1 {
+    background-color: aqua;
+    padding: 15px;
+}
+
+header > h1 {
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+footer {
+    background-color: aquamarine;
+    padding: 10px;
+}
