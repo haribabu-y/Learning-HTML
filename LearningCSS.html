@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Different Colors for h2 and p</title>
+  <style>
+    .merged-container {
+      display: inline-block; /* Keeps both elements together */
+      overflow: hidden; /* Ensures smooth merging */
+      width: 100%;
+      text-align: center;
+      }
+
+    h2{
+        background-color: red;
+        margin: 0; 
+        padding: 10px 15px;
+    }
+    p{
+        background-color: aqua;
+        margin: 0; 
+        padding: 5px 10px;
+    }
+
+    /* .merged-container h2 {
+      background-color: lightcoral; 
+      margin: 0; 
+      padding: 10px 15px;
+      color: white; 
+    }
+
+    .merged-container p {
+      background-color: lightblue; 
+      margin: 0; 
+      padding: 10px 15px;
+      color: black; 
+    } */
+  </style>
+</head>
+<body>
+
+  <div class="merged-container">
+    <h2>Heading</h2>
+    <p>This is a paragraph.</p>
+  </div>
+
+</body>
+</html>

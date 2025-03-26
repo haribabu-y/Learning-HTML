@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>Document</title>
 </head>
 <body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis inventore beatae dolores tenetur, rerum veniam. Placeat aut dolore natus, eos magni facere quia sapiente et saepe nam! Magni, quibusdam!</p>
     <form action="index.php" method="POST">
         <fieldset>
             <legend>Personal Details:</legend>
@@ -20,7 +21,7 @@
         <label for="bday">Date of Birth:</label>
         <input type="date" id="bday"><br>
         <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" minlength="0" maxlength="100"><br>
+        <input type="number" id="quantity" min="0" max="100"><br>
 
         <label for="gender">Gender:</label><br>
         <input type="radio" id="male" name="gender" value="male">
@@ -54,8 +55,8 @@
         <label for="datatime">dateTime-local</label>
         <input type="datetime-local"><br><br>
 
-        <label for="iage">Image:</label>
-        <input type="image"><br><br>
+        <label for="image">Image:</label>
+        <input type="image" alt="image"><br><br>
 
         <label for="browser">Your fav Browser:</label>
         <input list="browser" name="browser">

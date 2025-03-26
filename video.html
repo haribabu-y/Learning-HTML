@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body style= "text-align: center;">
+<button onclick="pauseOrPlay()">Pause/Play</button>
+<button onclick="mute()">Mute/Unmute</button>
+<button onclick="makeBig()">Big</button>
+
+<br><br>
+<video width="320" height="240" controls autoplay loop id="video1" muted>
+
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<script>
+var myvideo = document.getElementById("video1");
+function mute() {
+  myvideo.muted = !myvideo.muted;
+}
+  
+function pauseOrPlay() {
+	if(myvideo.paused) 
+    	myvideo.play();
+     else 
+    	myvideo.pause();
+}
+
+function makeBig() {
+    myvideo.requestFullscreen()
+}
+</script>
+
+</body>
+</html>
