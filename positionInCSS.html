@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        #static1 {
+            position: static;
+            border: 2px solid greenyellow;
+        }
+        #relative {
+            position: relative;
+            border: 2px solid greenyellow;
+            margin-left: 100px;
+        }
+        #fixed {
+            position: fixed;
+            border: 2px solid greenyellow;
+        }
+        #absolute {
+            position: absolute;
+            border: 2px solid greenyellow;
+        }
+        
+        #sticky {
+            position: sticky;
+            border: 2px solid greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <p id="static1">This div element has position: static;</p>
+    <p id="relative">This div element has position: relative;</p>
+    <p id="fixed">This div element has position: fixed;</p>
+    <p id="absolute">This div element has position: absolute;</p>
+    <p id="sticky">This div element has position: sticky;</p>
+</body>
+</html>
