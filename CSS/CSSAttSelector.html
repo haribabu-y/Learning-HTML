@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .attr a[target] {
+            background-color: yellow;
+        }
+        .attrval a[target="_blank"] {
+            background-color: yellow;
+        }
+        .attrwithvalue img[title~="jpg"] {
+            border: 3px solid greenyellow;
+        }
+        [class|="top"] {
+            background-color: yellow;
+        }
+        [id^="top"] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="attr">
+        <h1>CSS [Attribute] Selector</h1>
+        <p>The links which are having target attribute are get yellow background:</p>
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a href="https://www.disney.com" target="_blank">disney.com</a>
+        <a href="https://www.wikipedia.org" target="_parent">wikipedia.org</a>
+    </div>
+    <div class="attrval">
+        <h1>CSS [Attribute="Value"] Selector</h1>
+        <p>The links which are having target and its value attribute are get yellow background:</p>
+        <a href="https://www.w3schools.com">w3schools.com</a>
+        <a href="https://www.disney.com" target="_blank">disney.com</a>
+        <a href="https://www.wikipedia.org" target="_parent">wikipedia.org</a>
+    </div>
+
+    <div class="attrwithvalue">
+        <h1>CSS [Attribute ~="Value" selectors</h1>
+        <p>In the element attributes having a specific values like word, value etc are styled using this selector</p>
+        <img src="/BadassImage.jpg" alt="Badass song image" title="jpg">
+        <img src="/HTMLLogo.png" alt="HTML logo" title="png">
+        <img src="/pineapple.jpg" alt="Pineapple image" title="jpg">
+    </div>
+
+    <h2>CSS [attribute^="value"] Selector</h2>
+
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+
+    <h2>CSS [attribute^="value"] Selector</h2>
+
+    <h1 id="top-header">Welcome</h1>
+    <p id="top-text">Hello world!</p>
+    <p id="topcontent">Are you learning CSS?</p>
+</body>
+</html>
