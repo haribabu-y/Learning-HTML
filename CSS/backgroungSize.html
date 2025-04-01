@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background size types</title>
+    <style>
+        .div1 {
+            border: 2px solid black;
+            height: 150px;
+            width: 200px;
+            background-image: url("img_flwr.gif");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .div2 {
+            border: 2px solid black;
+            height: 150px;
+            width: 200px;
+            background-image: url("img_flwr.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .div3 {
+            border: 2px solid black;
+            height: 150px;
+            width: 200px;
+            background-image: url("img_flwr.gif");
+            background-repeat: no-repeat;
+        }
+        .div4 {
+            border: 2px solid black;
+            height: 150px;
+            width: 200px;
+            background-image: url("img_flwr.gif");
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Background size contain:</h2>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quod.</p>
+    </div>
+    <h2>Background size cover:</h2>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quod.</p>
+    </div>
+    <h2>Background size defined:</h2>
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quod.</p>
+    </div>
+    <h2>Background size auto:</h2>
+    <div class="div4">
+        <p>Setting the background size as auto</p>
+    </div>
+    <p>Original Image</p>
+    <img src="img_flwr.gif" alt="flowerimage">
+</body>
+</html>

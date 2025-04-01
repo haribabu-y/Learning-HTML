@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gredients and its types</title>
+    <style>
+        #grad1 {
+            height: 100px;
+            background-image: linear-gradient(red, yellow);
+        }
+        #grad2 {
+            height: 100px;
+            background-image: linear-gradient(to right, red, yellow);
+        }
+        #grad3 {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+        #grad4 {
+            height: 100px;
+            background-image: linear-gradient(120deg, red, yellow);
+        }
+        #grad5 {
+            height: 100px;
+            background-image: linear-gradient(red, yellow, green, purple, orange);
+        }
+        #grad6 {
+            height: 100px;
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255,0,0,1));
+        }
+        #grad7 {
+            height: 100px;
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+        #grad8 {
+            height: 100px;
+            background-image: radial-gradient(red, yellow, green)
+        }
+        #grad9 {
+            height: 100px;
+            background-image: radial-gradient(red 5%, yellow 20%, green 60%);
+        }
+        #grad10 {
+            height: 200px;
+            width: 200px;
+            background-image: radial-gradient(circle, red, yellow, green);
+        }
+        #grad11 {
+            height: 200px;
+            background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+        #grad12 {
+            height: 200px;
+            width: 200px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: conic-gradient(red, yellow, green);
+        }
+        #grad13 {
+            height: 200px;
+            width: 200px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: conic-gradient(red, yellow, green, blue, black);
+        }
+        #grad14 {
+            height: 200px;
+            width: 200px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+        }
+        #grad15 {
+            height: 200px;
+            width: 200px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: conic-gradient(red, yellow, green, blue, black);
+            border-radius: 50%;
+            }
+        #grad16 {
+            height: 200px;
+            width: 200px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+            }
+        #grad17 {
+            height: 200px;
+            width: 200px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Default(top to bottom) linear gradient</p>
+    <div id="grad1"></div>
+    <p>left to right linear gradient</p>
+    <div id="grad2"></div>
+    <p>top left to bottom rignt(Diagonal) linear gradient</p>
+    <div id="grad3"></div>
+    <p>Angle linear gradient</p>
+    <div id="grad4"></div>
+    <p>Multi colored linear gradient</p>
+    <div id="grad5"></div>
+    <p>Transparency linear gradient</p>
+    <div id="grad6"></div>
+    <p>Repeating  linear gradient</p>
+    <div id="grad7"></div>
+    <p>Default radial gradient</p>
+    <div id="grad8"></div>
+    <p>Differently spaced radial gradient</p>
+    <div id="grad9"></div>
+    <p>Seting shaped redial gradient</p>
+    <div id="grad10"></div>
+    <p>repeating redial gradient</p>
+    <div id="grad11"></div>
+    <h1>Conic Gradient - Three Colors</h1>
+    <div id="grad12"></div>
+    <h1>Conic Gradient - Five Colors</h1>
+    <div id="grad13"></div>
+    <h1>Conic Gradient - Defined degree for each color</h1>
+    <div id="grad14"></div>
+    <h1>Conic Gradient - Pie Chart</h1>
+    <div id="grad15"></div>
+    <h1>Conic Gradient - Pie Chart</h1>
+    <div id="grad16"></div>
+    <h1>Repeating a Conic Gradient</h1>
+    <div id="grad17"></div>
+</body>
+</html>
