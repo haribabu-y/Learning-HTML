@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+    <style>
+        /* h1 {
+            color: greenyellow;
+        }
+        @media screen and (max-width: 600px) {
+            h1 {
+                color: blue;
+            }
+        }
+        @media screen and (max-width: 300px) {
+            h1 {
+                color: red;
+            }
+        } */
+
+        .one {
+            background-color: aquamarine;
+            width: 220px;
+            height: 220px;
+            float: left;
+        }
+
+        @media screen  and (max-width: 600px) {
+            .one {
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <div>
+        <div class="one"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis ipsam repudiandae aspernatur nulla. Neque laborum dignissimos molestias eum recusandae doloremque libero similique quisquam rerum mollitia. Vel modi corrupti consequatur!</p>
+    </div>
+</body>
+</html>

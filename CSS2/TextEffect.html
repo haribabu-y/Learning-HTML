@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1 {
+            width: 200px;
+            border: 2px solid green;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        #p2 {
+            width: 200px;
+            white-space: nowrap;
+            border: 2px solid blue;
+            overflow:hidden;
+            text-overflow: ellipsis;
+        }
+        #p1:hover {
+            width: 100%;
+            overflow: scroll;
+        }
+        #p2:hover {
+            width:100%;
+            overflow: visible;
+            white-space: wrap;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cum facilis excepturi doloribus a aliquid quam esse natus maiores deserunt accusantium adipisci incidunt veritatis sed fugiat, expedita iure. Natus, repellat?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi sit, dolorum voluptate exercitationem unde architecto maiores ut dolorem! Mollitia, ab dolorum magnam nostrum commodi odio ad asperiores sed tempore?</p>
+    <p id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime cum facilis excepturi doloribus a aliquid quam esse natus maiores deserunt accusantium adipisci incidunt veritatis sed fugiat, expedita iure. Natus, repellat?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea excepturi sit, dolorum voluptate exercitationem unde architecto maiores ut dolorem! Mollitia, ab dolorum magnam nostrum commodi odio ad asperiores sed tempore?</p>
+
+</body>
+</html>
