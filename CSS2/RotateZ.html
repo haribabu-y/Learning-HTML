@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D Rotate Demo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            perspective: 500px; /* Adds depth for 3D effect */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 2s ease-in-out;
+        }
+
+        /* Rotate around the X-axis */
+        .box:hover {
+            transform: rotateZ(360deg) translateX(100px) ;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">RotateZ</div>
+
+</body>
+</html>

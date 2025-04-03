@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    .class1{
+    width: 100px;
+      position : relative;
+      top: 50px;
+      left : 100px;
+      height: 100px;
+      background-color: lightblue;
+      animation: transform 6s ease-in 1s infinite;
+    }
+     
+    @keyframes transform {
+      0% {
+        width: 50px;
+       transform: rotate(0deg);
+        top: 50px;
+        opacity: 0;
+        height: 50px;
+        background-color: black;
+      }
+      50% {
+        width: 150px;
+        transform: rotate(180deg);
+        top: 100px;
+        opacity: 1;
+        height:150px;
+        backgroundcolor: white;
+      }100%{
+        width: 50px;
+        transform: rotate(0deg);
+        top: 50px;
+        opacity: 0;
+        height: 50px;
+        background-color: white;
+      }
+    }</style>
+</head>
+<body>
+    <div class="class1">
+    </div>
+</body>
+</html>
